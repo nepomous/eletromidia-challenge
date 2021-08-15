@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Desafio Front-end Eletromídia - Rastreador de Endereços IP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre o Teste
 
-## Available Scripts
+O desafio dado foi construir este aplicativo Rastreador de Endereços de IPs e fazê-lo parecer o mais próximo possível do design proposto pelo recrutador. Para obter os locais do endereço IP, eu usei a [API de geolocalização por IP da IPify](https://geo.ipify.org/). Para gerar o mapa, eu usei o [LeafletJS](https://leafletjs.com/) através da lib [react-leaflet](https://react-leaflet.js.org/).
 
-In the project directory, you can run:
+### Para rodar este projeto
 
-### `yarn start`
+- Você precisa de uma chave de API [da IPify](https://geo.ipify.org/) para chamar a api;
+- Criar um arquivo `.env`, e nele colocar sua chave da seguinte forma: `REACT_APP_ACCESS_TOKEN=<Sua Chave da IPify>`;
+- Executar `yarn install` para instalar as dependências;
+- Finalmente, executar o projeto com `yarn start`;
+- Para ver funcionando, você pode começar com o endereço de IP do Google: `8.8.8.8`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Este projeto foi feito com:
+- Typescript;
+- Styled-Components;
+- [react-leaflet](https://react-leaflet.js.org/);
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Próximos passos:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- A responsividade ainda não está ideal. Pretendo ajustar para o projeto ficar visualmente melhor.
+- Falta executar testes. Pretendo usar o Jest para isso.
+- Validaçao de dados. Hoje o usuário pode colocar qualquer valor. Pretendo ajustar para apenas aceitar endereços de IP.
